@@ -1,0 +1,415 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-dark-grey: #666666;
+  --basic-red: #fb565a;
+  --basic-green: #00ca74;
+  --basic-yellow: #efc849;
+  --basic-grey: #eeeeee;
+}
+
+/* Global */
+
+.body {
+  padding: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1160px;
+  min-width: 960px;
+  margin: auto;
+}
+
+.header_main_content {
+  display: flex;
+  position: relative;
+}
+
+.radio_slider {
+  position: absolute;
+  display: flex;
+  margin: 320px 550px;
+
+}
+
+.header_main_background {
+  width: 100%;
+  background-color: var(--basic-grey);
+}
+
+.container_header {
+  height: 75px;
+  padding: 20px 0px;
+  position: relative;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+
+.list_navigation {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 100px 0 0;
+  margin: 0;
+}
+
+.list_navigation li {
+  padding: 0 45px;
+  padding-top: 20px;
+}
+
+.list_uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.header_navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket_navigation {
+  display: block;
+  padding-top: 20px;
+  position: relative;
+  padding: 20px;
+}
+
+.basket_navigation::before {
+  content: "";
+  background: url("../img-index/icon_basket.svg") no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+.text_slogan_header {
+  font-family: Roboto;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-transform: none;
+}
+
+
+
+/* Main */
+
+.hidden_h1 {
+  display: none;
+}
+
+.section_slider {
+  display: flex;
+  position: relative;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+.slider_img {
+  display: block;
+}
+
+.section_slider_two {
+  display: none;
+}
+
+.section_slider_three {
+  display: none;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: lowercase;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+  padding-bottom: 20px;
+}
+
+.button_slider {
+  padding: 17px 54px;
+  background-color: var(--basic-red);
+  max-width: 150px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.button_text {
+  color: white;
+}
+
+
+/* Services */
+
+.service_list_hidden_h2 {
+  visibility: hidden;
+}
+
+.service_list_ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.service_list_ul h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.service_list_ul li {
+  display: block;
+}
+
+.service_list_ul a {
+  padding: 15px 40px;
+  max-width: 90px;
+  text-align: center;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.button_services {
+  text-transform: uppercase;
+}
+
+.btn_red {
+  background-color: var(--basic-red);
+}
+
+.btn_green {
+  background-color: var(--basic-green);
+}
+
+.btn_yellow {
+  background-color: var(--basic-yellow);
+}
+
+.line_through {
+  padding-top: 80px;
+  padding-bottom: 39px;
+}
+
+.hidden_h2 {
+  display: none;
+}
+
+/* About company */
+
+.main_wrapper_about_company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_section_about_company {
+  display: block;
+}
+
+.inner_about_company {
+  display: block;
+}
+
+.text_about_company_header {
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: none;
+}
+
+.services_h3_about_company {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.service_list_about_company {
+  padding: 0;
+  list-style: none;
+  height: 120px;
+  width: 399px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.service_list_about_company li::before {
+  content: "";
+  background: url("../img-index/Rectangle.svg") no-repeat;
+  width: 25px;
+  height: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+
+}
+
+.title_procent_hidden {
+  display: none;
+}
+
+.fieldset_tittle {
+  text-align: center;
+}
+
+.fieldset_content {
+  border: 0 none;
+}
+
+/* Если убрать здесь флекс, все едет. Почему? */
+.fieldset_list {
+  display: flex;
+  list-style: none;
+}
+
+.fieldset_list li {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+/* Partners */
+
+
+.logo_items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  
+}
+
+
+/* Contacts */
+.hidden_headline_contacts {
+  display: none;
+}
+
+.contact_header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contact_adres {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contact_button_wrapper {
+  padding: 17px 44px;
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  max-width: 150px;
+  text-align: center;
+}
+
+.contact_button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+/* Footer */
+.footer_main_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Social */
+
+.footer_social_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.social_link {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-color: var(--basic-grey);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.footer_social_list li {
+  margin-right: 10px;
+}
+
+.wrapper_footer_social_list {
+  width: 262px;
+}
+
+/* Slogan */
+.footer_section_slogan {
+  display: block;
+  margin-left: 140px;
+}
+
+.footer_slogan {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer_text_benefits {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* выстраивание блока соц.сети(в виде списка) и блока со слоганом в горизонатльную линиую */
